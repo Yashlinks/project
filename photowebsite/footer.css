@@ -1,0 +1,120 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+*{
+    margin:0px;
+}
+
+
+.cont-container{
+border: 2px solid gray;
+background: #050303e6;
+background-image: url(images/map-image.png);
+background-size: 100vw 100vh;
+background-repeat: no-repeat;
+background-position: center center;
+width:100%;
+display:flex;
+flex-direction:row;
+flex-wrap:wrap;
+justify-content:center;
+}
+.cont-container div{
+margin:0.6rem;
+border:2px solid transparent;
+}
+.cont-container h2{
+margin: 0.5rem 0.5rem 1vw 0.5rem;
+color: #bab0b0;
+font-size: 1.8vw;
+}
+.feedback-pge{
+width:37%;
+text-align:left;
+}
+.contact-cont{
+width:25%;
+}
+.reviews-cont{
+width:33%;
+}
+
+/* ................  Get in Touch ................... */
+.feedback-pge input,textarea{
+margin:0.5vw;
+width:95%;
+border: 0.5px solid #fdf6f6;
+background: transparent;
+border-radius:0.4rem;
+padding:0.2rem 0rem 0.2rem 1rem;
+font-size:1.4vw;
+color:white;
+}
+.feedback-pge input{
+height:1.8vw;
+}
+.feedback-pge textarea{
+height:10vw;
+}
+
+.feedback-pge input::placeholder,
+.feedback-pge textarea::placeholder{
+font-size: 1.2vw;
+color: white;
+}
+#reset{
+width: 9vw;
+height: 3.5vw;
+background: #2d2121;
+border-radius: 0rem;
+font-size: 1.2vw;
+color: white;
+border: none;
+padding: 0.5rem;
+font-weight: bold;
+cursor: pointer;
+
+}
+#feed-submit{
+width: 7vw;
+height: 3.5vw;
+background: #b20a0a;
+border-radius: 0rem;
+font-size: 1.2vw;
+color: white;
+border: none;
+padding: 0.5rem;
+font-weight: bold;
+cursor: pointer;
+}
+
+/* ................  Contact Info ................... */
+.contact-cont p{
+    margin: 1.2vw 0.5vw 1.2vw 0.5vw;
+    padding-top:0.4vw;
+    padding-bottom:0.4vw;
+    border-bottom: 1.5px solid #994646;
+    border-right:2vw solid transparent;
+    border-left:2vw solid transparent;
+    display:flex;
+    align-items: center;
+
+   }
+   .contact-cont p text{
+    display:inline-block;
+    color:white;
+    font-size:1.2vw;
+   }
+   .contact-cont p .fas{
+    font-size: 1.8vw;
+    color:#ffdcdc;
+    margin-right: 1vw;
+    border:1px solid #994646;
+    border-radius: 3vw;
+    padding: 0.5vw
+   }
+
+   /* ................  Reviews ................... */
+   .review-tab{
+    height: 25vw;
+    border: 2px solid #994646;
+    margin: 0.5vw;}

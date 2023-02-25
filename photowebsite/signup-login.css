@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+ 
+
+/* Login Pop Up Style Start */
+#login-modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background:rgba(0,0,0,0.6);
+    z-index: 100;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.login-pge{
+    border: 1px solid rgb(194 194 194);
+    width: 27rem;
+    height:28rem;
+    flex-shrink: 1;
+    border-radius: 0.5rem;;
+    background: white;
+    margin:1.5rem;
+   /* background-color:rgba(0,0,0,0.7);
+      box-shadow: 4px 6px 14px 0px rgb(168 168 168); */  
+}
+
+.pge-title{
+    padding: 1.4rem;
+    border-bottom: 1px solid #777;
+}
+.pge-title > h1{
+    color: #616161;
+    font-size: 1.35rem;
+    text-align: center;
+}
+.close-icon {
+    background: none;
+    float: right;
+    border: none;
+    padding: 0px 8px;
+    cursor: pointer;
+}
+.btn-danger {
+    color: #777;
+    font-size: 1.3rem;
+}
+.btn-danger:hover{
+    color:rgb(87, 85, 85);
+}
+
+.input-row {
+  position: relative;
+  margin:2.8rem 0px;
+}
+
+#login-form {
+  padding: 0rem 1rem;
+}
+                                                                                                    
+.input-row > input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+  height: 2.8rem;
+  line-height: 1rem;
+  border-radius: 4px;
+}
+
+.input-row >
+input::placeholder{
+  font-size: 1.1rem;
+  color: #626262;
+}
+
+.input-row >
+input[type="email"],
+input[type="Password"] {
+  width: 100%;
+  padding: 0 0 0 10px;
+  margin: 0;
+  color: #3c3b3b;
+  border: 1px solid #7a7760;
+  font-style: normal;
+  font-size: 1.2rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  display: inline-block;
+  background: rgba(255,255,255,.1);
+}
+
+.input-row >
+input[type="email"]:focus,
+input[type="Password"]:focus {
+  border-color: #3ca9e2;
+}
+
+.input-row >
+input[type="email"]:valid ~ .validation,
+input[type="Password"]:valid ~ .validation {
+  display: block;
+  border-color: #0C0;
+}
+
+.input-row >
+input[type="email"]:valid ~ .validation span,
+input[type="Password"]:valid ~ .validation span {
+  background: #0C0;
+  position: absolute;
+  border-radius: 6px;
+}
+
+.input-row >
+input[type="email"]:valid ~ .validation span:first-child,
+input[type="Password"]:valid ~ .validation span:first-child {
+  top: 30px;
+  left: 14px;
+  width: 20px;
+  height: 3px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.input-row >
+input[type="email"]:valid ~ .validation span:last-child,
+input[type="Password"]:valid ~ .validation span:last-child {
+  top: 35px;
+  left: 8px;
+  width: 11px;
+  height: 3px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.validation {
+  display: none;
+  position: absolute;
+  content: " ";
+  height: 60px;
+  width: 30px;
+  right: 15px;
+  top: 0px;
+}
+
+.input-row >
+input[type="submit"] {
+  border: none;
+  display: block;
+  background-color: #3ca9e2;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-size: 18px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.input-row >
+input[type="submit"]:hover {
+  background-color: #45bbfb;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+#reg-msg{
+  font-size: 1rem;
+  color: #616161;
+  text-align: center;
+}
+#reg-msg > 
+a,
+a:link,
+a:visited,
+a:active {
+  color: #3ca9e2;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#reg-msg >
+a:focus, a:hover,
+a:link:focus,
+a:link:hover,
+a:visited:focus,
+a:visited:hover,
+a:active:focus,
+a:active:hover {
+  color: #329dd5;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+/*_________________________ Login Pop Up Style Start _______________________________________*/
+
+
+
+/* SignUp Pop Up Style Start */
+
+#signup-modal{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background:rgba(0,0,0,0.6);
+  z-index: 100;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.reg-page{
+  border: 1px solid rgb(194 194 194);
+  border-radius: 0.5rem;
+  height: 32rem;
+  width: 32rem;
+  text-align: center;
+  background: white;
+  /* background-color: rgba(0,0,0,0.7); 
+   background: linear-gradient(181deg,#f54126 0%,#eab9b9 50%,#f54126 90%); 
+  box-shadow: 4px 6px 14px 0px rgb(168 168 168);*/
+}
+
+.pge-title{
+  padding: 1.4rem;
+  border-bottom: 1px solid #777;
+}
+.pge-title > h1{
+  color: #616161;
+  font-size: 1.35rem;
+  text-align: center;
+}
+.close-icon {
+  background: none;
+  float: right;
+  border: none;
+  padding: 0px 8px;
+  cursor: pointer;
+}
+.btn-danger {
+  color: #777;
+  font-size: 1.3rem;
+}
+.btn-danger:hover{
+  color:rgb(87, 85, 85);
+}
+
+.reg-paragraph >
+input {
+   display: block;
+   box-sizing: border-box;
+   width: 100%;
+   outline: none;
+   height: 2.5rem;
+   line-height: 1rem;
+   border-radius: 4px;  
+}
+
+.name-info{
+display: flex;
+justify-content: space-between;
+}
+
+.reg-paragraph{
+position: relative;
+margin:1.4rem 0px;
+}
+
+#fstname-txtbox,
+#lstname-txtbox{
+  width: 100%;
+  }
+
+#contact-txtbox{
+margin-top: 0px; 
+}
+
+#Register-form{
+padding: 0rem 1rem;
+}
+
+/* label design and transition */
+.form-label
+{
+position:absolute;
+top:0.5rem;
+left:1rem;
+cursor: text;
+font-size: 1rem;
+transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+color: #706f6f;
+}
+
+  .textbox:focus ~ .form-label,
+  .textbox:not(:placeholder-shown).textbox:not(:focus) ~ .form-label{
+  top:-1rem;
+  left:0.6rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color:#ffffff;
+  background-color:#3ca9e2;
+  padding:0px 3px 0px 3px;
+  border:2px solid #3ca9e2;
+  border-radius:3px;
+}
+
+.textbox {
+ width: 100%;
+ padding: 0 0 0 10px;
+ margin: 0;
+ color: #373636;
+ border: 1px solid #7a7760;
+ font-style: normal;
+ font-size: 1.1rem;
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ appearance: none;
+ position: relative;
+ display: inline-block;
+ background: rgba(255,255,255,.1);
+}
+
+.textbox:focus {
+ border-color: #3ca9e2;
+}
+
+.textbox:hover{
+  background-color:rgba(255,255,255,.2); ;
+} 
+
+#toggle-eye{
+  position: absolute;
+  right: 1rem;
+  top: 0.6rem;
+  font-weight: 900;
+  font-size: 1.4rem;
+  color: #7C7B7B;
+  cursor: pointer;
+}
+
+/* button design */
+#regsubmit {
+border: none;
+display: block;
+background-color: #3ca9e2;
+color: #fff;
+font-weight: bold;
+text-transform: uppercase;
+cursor: pointer;
+-webkit-transition: all 0.2s ease;
+transition: all 0.2s ease;
+font-size: 18px;
+position: relative;
+display: inline-block;
+cursor: pointer;
+text-align: center;
+}
+
+#regsubmit:hover {
+-webkit-transition: all 0.2s ease;
+background-color: #329dd5;
+transition: all 0.2s ease;
+}
+
+#reg-msg{
+color: #616161;
+font-size: 1rem;
+}
+
+.msg-anchor,
+.msg-anchor:link,
+.msg-anchor:visited,
+.msg-anchor:active {
+color: #3ca9e2;
+-webkit-transition: all 0.2s ease;
+transition: all 0.2s ease;
+}
+
+.msg-anchor:focus,
+.msg-anchor:hover,
+.msg-anchor:link:focus,
+.msg-anchor:link:hover,
+.msg-anchor:visited:focus,
+.msg-anchor:visited:hover,
+.msg-anchor:active:focus,
+.msg-anchor:active:hover {
+color: #329dd5;
+-webkit-transition: all 0.2s ease;
+transition: all 0.2s ease;
+}
+
+
+/* media query for box sizing*/
+@media only screen and ( min-width: 0px) and (max-width:639px){
+#reg-box{ height:fit-content;}
+
+#lstname-txtbox,#fstname-txtbox{ 
+width: 100%;
+position: relative;
+display: inline-block; }
+.name-info{
+display: inline-block;
+width:100%;
+}
+#reg-msg{
+font-size: 1rem;
+}
+}
+
+/* SignUp Pop Up Style End */

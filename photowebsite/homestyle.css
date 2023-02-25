@@ -1,0 +1,360 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Kadwa&display=swap');
+font-family: 'Kadwa', serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+.parallx-background{
+    width:100%;
+    background-image:url(images/img1.jpg);
+    background-size:100% 50%;
+    background-attachment:fixed;
+    background-repeat: repeat;
+    
+}
+
+/* .................................................Image Animation Css .............................................. */
+.slider {
+    width: 100vw;
+    height: 42vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.imgs_slides {
+    width: 100%;
+    height: 42vw;
+    background: url(images/slide1.3.jpg);
+    background-size: cover;
+    animation: slide 20s infinite;
+}
+@keyframes slide{
+    50%{
+        background:url(images/slide1.5.jpg);
+        background-size: cover;
+    }
+    75%{
+        background:url(images/candid1.jpg);
+        background-size: cover;
+    }
+    100%{
+        background:url(images/slide1.4.jpg);
+        background-size: cover;
+    }
+} 
+.slide-inner {
+    width: 60%;
+    height: 40vw;
+    margin: 3vw 1vw 2vw 38vw;
+    padding: 6vw 1vw 1vw 9vw;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.text1{
+    color: white;
+    font-size: 3.8vw;
+    font-style: italic;
+    font-weight: 600;
+    text-align: left;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+}
+.text2{
+    margin: 2vw 0rem 2vw 0rem;
+    text-align: left;
+    padding-right: 5vw;
+    font-size: 1.7vw;
+    font-family: 'Gupter', serif;
+    margin-bottom: 5vw;
+}
+#Book-btn{
+    border: 1px solid #b80c0c;
+    padding: 1.2rem;
+    border-radius: 7px;
+    background-color: #e50a0a;
+    color: #e2d8d8;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    }
+
+    #Book-btn:hover{
+    padding: 1.3rem;
+    color:#c7baba;
+    font-size: 1.5rem;
+    }
+/* .................................................Image Animation Css .............................................. */
+
+
+/* ......................... Simple msg ...................................*/
+
+.msg-container{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+.msg-ribbion{
+padding: 1rem;
+width: 40%;
+border-top: 2px solid #9b9393;
+border-bottom: 2px solid #9b9393;
+border-left: 5rem solid transparent;
+border-right: 5rem solid transparent;
+display:flex;
+justify-content: center;
+align-items: center;
+box-sizing: unset;
+}
+
+.msg-ribbion:hover{
+border-color:#6a6464;
+transition:0.5s;
+cursor:default;
+}
+.msg-ribbion h4{
+color: #9b9393;
+font-size:17px;
+}
+
+.msg-ribbion h4:hover{
+color:#6a6464;
+transition:0.2s;
+cursor:default;
+}
+/* ......................... Simple msg ...................................*/
+
+
+/*_____________________________  photo section __________________________________ */
+.photo-slider {
+    margin-bottom: 0.5rem;
+    border:2px solid #f0f5fa;
+    background-color: #f0f5fa;
+    background-size: cover;
+    box-shadow: inset 11px 10px 17px 0px #efeffd;
+  } 
+  .hi-slide{
+    width: 100%;
+    margin:4vw auto 0;
+    display: flex;
+    overflow-x: auto;
+  }
+  .img-cont{ 
+    display:inline-block;
+    min-width: 30%;
+    height: 22vw;
+    margin: 2.5vw 3vw 2.5vw 3vw;
+    box-shadow: 11px 11px 16px 2px rgb(111 110 110);
+}
+.img-cont div{  
+    display: inline-block;
+    float: left;
+    padding: 4% 6% 4% 6%;
+    width: fit-content;
+    background: rgb(255 255 255 / 72%);
+} 
+#img_1{
+    background-image:url(images/candid1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}  
+#img_2{
+    background-image:url(images/outdoor.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}   
+#img_3{
+    background-image:url(images/kids_portrait.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}  
+.animate-character
+{
+    font-size: 1.7vw;
+    background-image: linear-gradient( 146deg, #ff0000 0%, #ff000096 29%, #431c1cb0 67%, #ff0505 100% );
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+/*______________________________ photo section close_____________________________________ */
+
+/*_______________________________ service section start __________________________________*/
+.upp-text{
+    width: 100%;
+    background: #000000;
+  }
+.upp-text h1{
+    color: white;
+    font-size: 4vw;
+    text-align: center;
+    display: block;
+    padding: 2rem 2rem 0;
+    letter-spacing: 0.2rem;
+    font-family:'Poppins', sans-serif;
+  }      
+.animate-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.text-animate{
+    width: fit-content;
+    overflow: hidden;
+    border: 25px solid;
+    border-left: 100px solid;
+    border-right: 100px solid;
+    border-image-source: url(images/design.png);
+    border-image-slice: 50;
+}
+.text-animate .text{
+    position: relative;
+    color: #ff0408;
+    font-size: 3.5vw;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+}
+.text-animate .text.first-text,
+.text-animate .text.last-text
+{
+    color: #FFF;
+}
+.text.sec-text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    border-left: 2px solid #ff0408;
+    animation: animate 4s steps(12) infinite;
+}
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+
+  .services h1{ 
+  color: #d40a0a;
+  font-size: 2vw;
+  margin: 1.5vw;
+  }
+  .service-info{
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.text-cont{
+    border: 2px solid rgba(0,0,0,0.4);
+    padding: 1.5vw;
+    margin: 1vw;
+    width: 18rem;
+    background-color: #f0f5fa1a;
+    display: flex;
+    align-items: center;
+}
+.text-cont img{
+    width: 3vw;
+    filter: invert(80%);
+    margin-right: 1rem;
+}
+.service-info h3{
+    font-size: 1.3vw;
+    color: #dcdbdb;
+}
+
+
+
+ /*_________________ service section Close ____________________ */
+
+
+.package-cont{
+border:2px solid #cf121285;
+background-color:#cf121285;
+padding:5% 10% 2.5% 10%;
+display: flex;
+}
+.starter-pkg, .advanced-pkg, .pro-pkg{
+width:22%;
+text-align:center;
+display: inline-block;
+margin: 0vw 4vw 0vw 4vw;
+}
+.pkg_cont{
+width: 76.5%;
+padding: 2vw;
+border: 1px solid #060606ed;
+color: white;
+background:#060606ed;
+}
+.price-circle{
+background: #ef0000bd;
+border-radius: 50vw;
+display: inline-block;
+padding: 2.3vw;
+}
+.package-cont h1{
+padding-bottom: 1vw;
+margin-bottom: 1vw;
+border-bottom: 1px solid red;
+font-size:1.6vw;
+color:#ef0000bd;
+}
+.package-cont h2{
+font-size:1.5vw;
+color:#060606ed;
+}
+.traingle{
+margin-top: 0.2rem;
+border-top: 8vw solid #ef0000bd;
+border-left: 8.8vw solid transparent;
+border-right: 8.8vw solid transparent;
+}
+.traingle a{
+position: relative;
+text-decoration: none;
+top: -6.7vw;
+left: -1.5vw;
+color:#060606ed;
+font-size: 1.6vw;
+}
+.traingle a:hover{
+color:#cddefbed;
+transition:0.5s;
+}
+.pkg_cont ul{
+display: inline-block;
+padding-left: 1.5vw;
+}
+.pkg_cont li{
+text-align: left;
+font-size: 1.8vw;
+}
